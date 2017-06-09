@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <sweets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:noNamespaceSchemaLocation="sweets.xsd">
+		xsi:noNamespaceSchemaLocation="resources/sweets.xsdsweets.xsd">
 	<candy id="1">
 		<name>Zoriane Siavo</name>
 		<energy>777</energy>
