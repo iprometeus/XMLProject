@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<sweets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="sweets.xsd">
+	<candy id="1">
+		<name>Zoriane Siavo</name>
+		<energy>777</energy>
+		<type id="1">
+			<name>caramel</name>
+		</type>
+		<ingredients id="1">
+			<water>5</water>
+			<sugar>5</sugar>
+			<fruitSugar>5</fruitSugar>
+			<vanillin>2</vanillin>
+			<chocolate id="2">
+				<name>black</name>
+			</chocolate>
+		</ingredients>
+		<value id="1">
+			<proteins>20</proteins>
+			<carbohydrates>30</carbohydrates>
+			<fats>10</fats>
+		</value>
+		<production id="1">
+			<name>Svitoch LTD.</name>
+		</production>
+	</candy>
+	<candy id="2">
+		<name>Zolotyi gorishok</name>
+		<energy>222</energy>
+		<type id="2">
+			<name>chocolate</name>
+		</type>
+		<ingredients id="2">
+			<water>6</water>
+			<sugar>6</sugar>
+			<fruitSugar>6</fruitSugar>
+			<vanillin>6</vanillin>
+			<chocolate id="1">
+				<name>white</name>
+			</chocolate>
+		</ingredients>
+		<value id="2">
+			<proteins>20</proteins>
+			<carbohydrates>52</carbohydrates>
+			<fats>2</fats>
+		</value>
+		<production id="2">
+			<name>AVK LTD.</name>
+		</production>
+	</candy>
+</sweets>

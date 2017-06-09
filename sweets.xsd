@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="sweets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="candy" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:positiveInteger" name="energy"/>
+              <xs:element name="type">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ingredients">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="water"/>
+                    <xs:element type="xs:byte" name="sugar"/>
+                    <xs:element type="xs:byte" name="fruitSugar"/>
+                    <xs:element type="xs:byte" name="vanillin"/>
+                    <xs:element name="chocolate">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="value">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="proteins"/>
+                    <xs:element type="xs:byte" name="carbohydrates"/>
+                    <xs:element type="xs:byte" name="fats"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="production">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:positiveInteger" name="id" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
